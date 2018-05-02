@@ -1,3 +1,3 @@
-FROM easy_study:1.0
+FROM easy_study:1.1
 MAINTAINER Charmen
 USER root

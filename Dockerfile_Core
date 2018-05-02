@@ -77,4 +77,3 @@ EXPOSE 8069 8071
 COPY entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/entrypoint.sh / # backwards compat
 ENTRYPOINT ["entrypoint.sh"]
-#CMD ["/bin/bash"]
