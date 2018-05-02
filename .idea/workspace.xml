@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8162d829-857c-4e7d-9afc-cc54351e3429" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/app/student_information_grade.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/app/student_information_school.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/student_manager/template/student/student_information_grade.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/student_manager/template/student/student_information_school.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/student_manager/template/student/student_information_signature.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Dockerfile_Core" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/requirements.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/sources.list" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docker-compose.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/entrypoint.sh" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/student_manager/controller/student_page_controller.py" afterPath="$PROJECT_DIR$/app/student_manager/controller/student_page_controller.py" />
-      <change beforePath="$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/init.js" afterPath="$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/init.js" />
-      <change beforePath="$PROJECT_DIR$/app/student_manager/template/student/change_password.html" afterPath="$PROJECT_DIR$/app/student_manager/template/student/change_password.html" />
-      <change beforePath="$PROJECT_DIR$/app/student_manager/template/student/contact_detail.html" afterPath="$PROJECT_DIR$/app/student_manager/template/student/contact_detail.html" />
-      <change beforePath="$PROJECT_DIR$/app/student_manager/template/student/course_detail.html" afterPath="$PROJECT_DIR$/app/student_manager/template/student/course_detail.html" />
-      <change beforePath="$PROJECT_DIR$/app/student_manager/template/student/login.html" afterPath="$PROJECT_DIR$/app/student_manager/template/student/login.html" />
       <change beforePath="$PROJECT_DIR$/app/student_manager/template/student/main.html" afterPath="$PROJECT_DIR$/app/student_manager/template/student/main.html" />
-      <change beforePath="$PROJECT_DIR$/app/student_manager/template/student/new_friend.html" afterPath="$PROJECT_DIR$/app/student_manager/template/student/new_friend.html" />
-      <change beforePath="$PROJECT_DIR$/app/student_manager/template/student/student_information.html" afterPath="$PROJECT_DIR$/app/student_manager/template/student/student_information.html" />
+      <change beforePath="$PROJECT_DIR$/config/ljw.conf" afterPath="$PROJECT_DIR$/config/prod.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,61 +35,81 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_information_grade.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/student_manager/template/student/student_information_grade.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="init.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="91" column="29" lean-forward="true" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
+            <state relative-caret-position="435">
+              <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_information_school.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/app/student_information_school.js">
+      <file leaf-file-name="prod.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/prod.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/student_manager/template/student/login.html">
+      <file leaf-file-name="Dockerfile_Core" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dockerfile_Core">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="72" column="110" lean-forward="false" selection-start-line="72" selection-start-column="110" selection-end-line="72" selection-end-column="110" />
+            <state relative-caret-position="426">
+              <caret line="54" column="49" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_information_grade.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/app/student_information_grade.js">
+      <file leaf-file-name="entrypoint.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entrypoint.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_information_signature.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/student_manager/template/student/student_information_signature.html">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="51" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sources.list" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/sources.list">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -106,26 +120,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
               <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/app/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/student_manager/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,6 +159,7 @@
       <find>2014</find>
       <find>Back</find>
       <find>我的</find>
+      <find>person</find>
     </findStrings>
     <replaceStrings>
       <replace>item-right</replace>
@@ -189,9 +184,6 @@
         <option value="$PROJECT_DIR$/manger.y.py" />
         <option value="$PROJECT_DIR$/manger.py" />
         <option value="$PROJECT_DIR$/manager.py" />
-        <option value="$PROJECT_DIR$/docker-compose.yaml" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/entrypoint.sh" />
         <option value="$PROJECT_DIR$/app/student_manager/controller/__init__.py" />
         <option value="$PROJECT_DIR$/app/student_manager/__init__.py" />
         <option value="$PROJECT_DIR$/app/student_manager/__manifest__.py" />
@@ -199,7 +191,6 @@
         <option value="$PROJECT_DIR$/dependents/framework7/controllers/__init__.py" />
         <option value="$PROJECT_DIR$/dependents/framework7/__init__.py" />
         <option value="$PROJECT_DIR$/dependents/framework7/__manifest__.py" />
-        <option value="$PROJECT_DIR$/config/ljw.conf" />
         <option value="$PROJECT_DIR$/app/student_manager/controller/student_api_controller.py" />
         <option value="$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/app/login.js" />
         <option value="$PROJECT_DIR$/app/student_manager/template/student/change_password.html" />
@@ -226,6 +217,11 @@
         <option value="$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/app/student_information_school.js" />
         <option value="$PROJECT_DIR$/app/student_manager/template/student/student_information_school.html" />
         <option value="$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/init.js" />
+        <option value="$PROJECT_DIR$/entrypoint.sh" />
+        <option value="$PROJECT_DIR$/docker-compose.yaml" />
+        <option value="$PROJECT_DIR$/config/ljw.conf" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/Dockerfile_Core" />
       </list>
     </option>
   </component>
@@ -362,75 +358,12 @@
             <path>
               <item name="easy_study" type="b2602c69:ProjectViewProjectNode" />
               <item name="easy_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="student_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="easy_study" type="b2602c69:ProjectViewProjectNode" />
               <item name="easy_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="student_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="student_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="student_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="student_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="easy_student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="student_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="easy_student" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="student_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="easy_student" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="student_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy_study" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="student_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -449,13 +382,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/student_manager/static/app/easy_student/img" />
       <recent name="$PROJECT_DIR$/app/student_manager/static/app/easy_student/font" />
       <recent name="$PROJECT_DIR$/app/student_manager/template/student" />
       <recent name="$PROJECT_DIR$/dependents/framework7" />
-      <recent name="$PROJECT_DIR$/app/student_manager/static/app/easy_student/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/student_manager/static/app/easy_student/css" />
       <recent name="$PROJECT_DIR$/dependents" />
     </key>
@@ -537,11 +472,11 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29288703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29288703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27196652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2635135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27196652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2635135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -600,12 +535,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt" />
-    <entry file="file://$PROJECT_DIR$/manager.py" />
-    <entry file="file://$PROJECT_DIR$/flasky.py" />
-    <entry file="file://$PROJECT_DIR$/config.py" />
-    <entry file="file://$PROJECT_DIR$/entrypoint.sh" />
-    <entry file="file://$PROJECT_DIR$/app/models.py" />
     <entry file="file://$PROJECT_DIR$/app/server.py" />
     <entry file="file://$PROJECT_DIR$/app/main/views.py" />
     <entry file="file://$PROJECT_DIR$/app/templates/server.html" />
@@ -681,14 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/ljw.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -879,7 +800,7 @@
     <entry file="file://$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/app/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -895,7 +816,7 @@
     <entry file="file://$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/app/student_information_school.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -911,7 +832,7 @@
     <entry file="file://$PROJECT_DIR$/app/student_manager/template/student/student_information_grade.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -934,8 +855,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/student_manager/static/app/easy_student/js/init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="91" column="29" lean-forward="true" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
+        <state relative-caret-position="435">
+          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/sources.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entrypoint.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/prod.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile_Core">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="54" column="49" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="49" />
           <folding />
         </state>
       </provider>

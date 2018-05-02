@@ -1,0 +1,80 @@
+FROM python:2.7
+MAINTAINER Charmen
+ENV PYTHONUNBUFFERED 1
+USER root
+RUN groupadd -r odoo --gid=919 && useradd -r -g odoo --uid=919 odoo
+# grab gosu for easy step-down from root
+ENV GOSU_VERSION 1.10
+
+ADD core/sources.list /etc/apt/
+ADD core/lib/gosu /usr/local/bin
+ADD core/lib/gosu.asc /usr/local/bin
+
+RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 437D05B5 \
+	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys C0B21F32 \
+	&& gpg --export --armor 437D05B5 | apt-key add - \
+	&& gpg --export --armor C0B21F32 | apt-key add - \
+	&& set -x \
+	&& apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* \
+	&& export GNUPGHOME="$(mktemp -d)" \
+	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
+	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu \
+	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc \
+	&& chmod +x /usr/local/bin/gosu \
+	&& gosu nobody true \
+	&& apt-get purge -y --auto-remove ca-certificates wget
+
+RUN mkdir /app && chown -R odoo /app && mkdir /var/lib/odoo && chown -R odoo /var/lib/odoo
+WORKDIR /app
+ADD /core/ /app/core/
+
+# LDAP
+RUN apt-get update \
+        && apt-get install -y \
+            libsasl2-dev \
+            libldap2-dev \
+            libssl-dev
+RUN pip install --index-url=http://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com -r core/requirements.txt
+# PDF HTML
+RUN apt-get update && set -x; \
+        apt-get install -y --no-install-recommends \
+            ca-certificates \
+            curl \
+            node-less \
+            node-clean-css \
+            python-pyinotify \
+            python-renderpm \
+            # python-support \
+        && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 /app/core/lib/wkhtmltox.deb' | sha1sum -c - \
+        && dpkg --force-depends -i /app/core/lib/wkhtmltox.deb \
+        && apt-get -y install -f --no-install-recommends \
+        && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm \
+        && rm -rf /var/lib/apt/lists/*
+
+# PG CLIENT
+RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main" >> /etc/apt/sources.list.d/pgdg.list \
+        && apt-key add /app/core/lib/ACCC4CF8.asc \
+        && apt-get update \
+        && apt-get -y install postgresql-client-9.5
+# FONTS
+RUN apt-get -qqy --no-install-recommends install \
+            xfonts-base \
+            fonts-ipafont-gothic \
+            xfonts-100dpi \
+            xfonts-75dpi \
+            xfonts-cyrillic \
+            xfonts-scalable
+RUN apt-get -qqy install ttf-wqy-microhei \
+        && ln /etc/fonts/conf.d/65-wqy-microhei.conf /etc/fonts/conf.d/69-language-selector-zh-cn.conf \
+	&& rm -rf /app/core/lib /root/.cache /var/lib/apt/lists/*
+# VOLUMES
+VOLUME ["/code"]
+
+# EXPOSE
+EXPOSE 8069 8071
+
+# DEFAULT
+COPY entrypoint.sh /usr/local/bin/
+RUN ln -s usr/local/bin/entrypoint.sh / # backwards compat
+ENTRYPOINT ["entrypoint.sh"]
+#CMD ["/bin/bash"]

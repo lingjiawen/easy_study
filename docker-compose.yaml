@@ -1,0 +1,31 @@
+version: '2'
+services:
+    db_easystudy:
+        image: postgres:9.5.11
+        container_name: easy_study_db
+        environment:
+            - POSTGRES_USER=easystudy
+            - POSTGRES_PASSWORD=easystudy
+        volumes:
+            - easy_study_volume_db:/var/lib/postgresql/data
+        expose:
+            - "5432"
+        network_mode: bridge
+
+    app_easystudy:
+        container_name: easy_study_app
+        build: .
+        restart: always
+        tty: true
+        depends_on:
+            - db_easystudy
+        ports:
+            - "8000:8069"
+        links:
+            - db_easystudy
+        volumes:
+            - ./:/code
+        network_mode: bridge
+volumes:
+        easy_study_volume_db:
+                external: true
