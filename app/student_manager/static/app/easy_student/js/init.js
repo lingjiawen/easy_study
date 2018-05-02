@@ -81,6 +81,14 @@ var app = new Framework7({
             }
         },
         {
+            path: '/course_information/',
+            url: '/course_information',
+            on: {
+                pageInit: function (e, page) {
+                },
+            }
+        },
+        {
             path: '/student_information/',
             url: '/student_information',
             on: {
