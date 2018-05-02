@@ -48,3 +48,18 @@ class StudentAPIController(http.Controller):
     def student_course_detail(self, **post):
         template = jinja.get_template("course_detail.html")
         return template.render()
+
+    @http.route('/student_information_school', auth='none', csrf=False)
+    def student_information_school(self, **post):
+        template = jinja.get_template("student_information_school.html")
+        return template.render()
+
+    @http.route('/student_information_grade', auth='none', csrf=False)
+    def student_information_grade(self, **post):
+        template = jinja.get_template("student_information_grade.html")
+        return template.render()
+
+    @http.route('/student_information_signature', auth='none', csrf=False)
+    def student_information_signature(self, **post):
+        template = jinja.get_template("student_information_signature.html")
+        return template.render()

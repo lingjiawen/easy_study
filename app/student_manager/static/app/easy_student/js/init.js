@@ -85,15 +85,48 @@ var app = new Framework7({
             url: '/student_information',
             on: {
                 pageInit: function (e, page) {
+                    myGender();
+                    myName();
                 },
                 pageBeforeIn: function (e, page) {
-                    myHead()
-                    myName()
-                    myGender()
+                    myHead();
+                }
+            }
+        },
+        {
+            path: '/student_information_school/',
+            url: '/student_information_school',
+            on: {
+                pageInit: function (e, page) {
+                   searchSchool();
+                },
+                pageBeforeIn: function (e, page) {
                 }
             }
         },
 
+        {
+            path: '/student_information_grade/',
+            url: '/student_information_grade',
+            on: {
+                pageInit: function (e, page) {
+                    pickGrade()
+                },
+                pageBeforeIn: function (e, page) {
+                }
+            }
+        },
+
+        {
+            path: '/student_information_signature/',
+            url: '/student_information_signature',
+            on: {
+                pageInit: function (e, page) {
+                },
+                pageBeforeIn: function (e, page) {
+                }
+            }
+        },
         {
             path: '/change_password/',
             url: '/change_password',
